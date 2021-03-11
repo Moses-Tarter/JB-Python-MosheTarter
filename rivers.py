@@ -32,7 +32,6 @@ def explore_node(i, j, matrix, visited, sizes):
 
 # Helper function for retrieving a specific node unvisited neighbors
 def get_unvisited(i, j, matrix, visited):
-
     unvisited_nodes = []
     if i > 0 and not visited[i - 1][j]:
         unvisited_nodes.append([i - 1, j])
@@ -42,7 +41,6 @@ def get_unvisited(i, j, matrix, visited):
         unvisited_nodes.append([i, j - 1])
     if j < len(matrix[0]) - 1 and not visited[i][j + 1]:
         unvisited_nodes.append([i, j + 1])
-
     return unvisited_nodes
 
 
